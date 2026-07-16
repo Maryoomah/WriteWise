@@ -1,4 +1,5 @@
 import Link from "next/link";
+import NavLink from "@/components/navlink";
 export default function Home() {
   return (
     <>
@@ -15,8 +16,8 @@ export default function Home() {
             </p>
           </div>
           <div className="flex flex-col items-center gap-4 text-white mt-8">
-            <Link href="/login"className="inline-block bg-blue-800 py-2 px-3 rounded-lg">Login to your dashboard</Link>
-            <Link href="/register" className="inline-block bg-blue-800 py-2 px-3 rounded-lg">New User? Create Account</Link>
+            <NavLink href="/login">  Login to Dashboard </NavLink>
+            <NavLink href="/register">New User? Create Account</NavLink>
           </div>
         </div>
       </section>
